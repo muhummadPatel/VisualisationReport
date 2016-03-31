@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>World Religion Visualisation</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">World Religion Visualisation</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="background.html">Background</a></li>
+            <li><a href="visual_queries.html">Visual Queries</a></li>
+            <li><a href="design_iteration.html">Design Iteration</a></li>
+            <li class="active"><a href="#">Final Design</a></li>
+            <li><a href="strengths_and_weaknesses.html">Strengths &amp; Weaknesses</a></li>
+            <li><a href="teamwork.html">Teamwork</a></li>
+            <li><a href="conclusion.html">Conclusion</a></li>
+            <li><a href="references.html">References</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <h1>World Religion Visualisation</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <h2 id="Final_Design">Final Design</h2>
+          <p>
+            This section details a walkthrough of our final design. It displays how the individual visualizations interact with each other and how a user would navigate through the visualization using a series of screens.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <h3 id="Screen1">Screen 1: Initial Layout</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <br/>
+          <div class="thumbnail">
+            <img src="img/3_full1990.png" alt="img/3_full1990.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-8">
+          <p>
+            The first screen shows the default layout of the interface initially presented to the user. It contains a map which shows the most dominant religion in the different regions of the world in 1990.The map corresponds to a legend of religions that use colour differentiate between religions and a colour gradient to differentiate between the sects of a particular religion. The main colour of the religion is taken as an average of the colours of its sects, if any.
+          </p>
+          <p>
+            The map is also linked to a line graph that acts as a timeline. The line graph depicts the number of followers for the different religions over time, providing a quick overview for the user. Using the timeline, users can select a year of interest which will then update the map to indicate the dominant religions at that particular time. This is shown in the next screen.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <h3 id="Screen2">Screen 2: Changing the Year</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <br/>
+          <div class="thumbnail">
+            <img src="img/3_2010.png" alt="img/3_2010.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-8">
+          <p>
+            This screen shows the interaction between the timeline and map. Once the user has clicked a year on the timeline, the map will  update to show the dominant religion for that particular year and the user will be able to see the differences in the spread of religion. In this example, the year 2010 was chosen. It can be seen that most of Asia has gone from being predominantly non-religious in 1990 to christian in 2010.
+          </p>
+          <p>
+            The map provides a general overview of the spread of world religion, however people may be interested in the spread of religion in specific regions and how they compare. This is shown in the following screens.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <h3 id="Screen3">Screen 3: User Selects a Country of Interest</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <br/>
+          <div class="thumbnail">
+            <img src="img/3_2010SAselected.png" alt="img/3_2010SAselected.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-8">
+          <p>
+            The user may now want to be able to compare the spread of religions in specific countries, for instance, USA ( United States of America) and SA ( South Africa). This screen shows how the user can select different countries to do so.
+          </p>
+          <p>
+            Once a country is selected, the country will pop up slightly and the rest of the map will fade out so that the selected country is clearly communicated with the user.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <h3 id="Screen4">Screen 4: User Selects a Second Country to Compare Against</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <br/>
+          <div class="thumbnail">
+            <img src="img/3_full2010SAUSAselected.png" alt="img/3_full2010SAUSAselected.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-8">
+          <p>
+            In this screen, the user selects a second country (USA). As with the previous selected country, the second country will also pop up slightly but a texture will also be added to the second country to further distinguished between the two selected countries.
+          </p>
+          <p>
+            Once the two countries are selected, an additional bar graph will appear and the two countries and their flags will be displayed to the left of the graph. The bar graph depicts a comparison between the number of followers per religion for the two countries which allows users to interrogate the spread of religion in the two countries.
+          </p>
+          <p>
+            The number of followers are initially shown as an absolute value of the population of the country, which can make the data seem misleading as the population of people in each country may differ greatly, as seen in this example. To solve this problem, the users are allowed to either display the absolute number of followers or the percentage of the population that the followers make up. This is shown in the next slide.s
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <h3 id="Screen5">Screen 5: User Switches to Display Percentages</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <br/>
+          <div class="thumbnail">
+            <img src="img/3_2010SAUSAselectedwithbar.png" alt="img/3_2010SAUSAselectedwithbar.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-8">
+          <p>
+            In this screen, the user has selected the option to show the percentage of the population that a religion makes up. This allows for a more truer comparison between countries. As seen in the screen, SA indeed has a greater percentage of christian followers than USA, even though the population of USA is far greater than SA.
+          </p>
+          <p>
+            Now, the user might be curious about the different sects of a particular religion and which one is most popular. Our visualization allows users to click on the religious symbols to the left of the graph. This will cause the bar graph to update and show the different sects of that religion which is shown in the next screen.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <h3 id="Screen6">Screen 6: User Selects a Religion to Display Sects</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <br/>
+          <div class="thumbnail">
+            <img src="img/3_sectsfull.png" alt="img/3_sectsfull.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-8">
+          <p>
+            As seen in this screen, once the user has selected a religion on the bar graph, the graph updates to show the individual sects that the religion is comprised of. The user can then click on the religion icon again to revert to the religion view.
+          </p>
+          <p>
+            Our design allows the user to further filter out religions that they do not want to see. This can be particularly useful when a single religion overshadows many other smaller religions, making it hard to compare between them. An example of this would be Christianity. The user might be interested in comparing two smaller religions, for instance, Islam and Buddhism. The user can then click on religions in the legend to filter them out. This is shown in the next screen.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <h3 id="Screen7">Screen 7: The User Filters Out a Religion</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <br/>
+          <div class="thumbnail">
+            <img src="img/3_filtered1.png" alt="img/3_filtered1.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-8">
+          <p>
+            The user has the option to filter certain religions out by clicking on them in the legend. This is indicated with the symbol of the religion being faded. This will cause the rest of the graphs reflect this change by not including the filtered religions. This is shown in the screen.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <h3 id="Screen8">Screen 8: User Filters Out Religions for Easy Comparisons</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <br/>
+          <div class="thumbnail">
+            <img src="img/3_filteredfull.png" alt="img/3_filteredfull.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-8">
+          <p>
+            This is the screen displayed after the user has filtered out a number of religions until only two remain. In this example, all of the religions except Buddhism and Islam have been filtered out. This allows for a much easier comparison than having all of the religions being displayed. Note that the bar graph and line chart also update in order to reflect the filtered data.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+      <!-- Image element -->
+      <!-- <div class="thumbnail">
+        <img src="img/oldline.jpg" alt="img/oldline.jpg"><br/><br/>
+      </div> -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
