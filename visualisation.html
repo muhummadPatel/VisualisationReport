@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>World Religion Visualisation</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">World Religion Visualisation</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="background.html">Background</a></li>
+            <li><a href="visual_queries.html">Visual Queries</a></li>
+            <li class="active"><a href="#">Visualisation</a></li>
+            <li><a href="strengths_and_weaknesses.html">Strengths &amp; Weaknesses</a></li>
+            <li><a href="teamwork.html">Teamwork</a></li>
+            <li><a href="conclusion.html">Conslusion</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <h1>World Religion Visualisation</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <h2 id="Visualisation">Visualisation</h2>
+          <p>
+            Our final visualisation design, like all good designs, is the product of multiple iterations and many failures. Once we had identified our topic and procured our dataset, we engaged in multiple brainstorming sessions and kept track of our best ideas. This collection of ideas was then used to generate our first design iteration
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <h2 id="Initial_Design">Initial Design</h2>
+          <p>
+            Our first design iteration presented the data as a collection of connected visualisations. We attempted to show the user as much about the data as possible on a single page while still allowing the user to interrogate the data further through interaction.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <h3 id="Legend">Legend</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-4">
+          <div class="thumbnail">
+            <img src="img/1_legend.png" alt="img/1_legend.png">
+          </div>
+          <p>
+            The legend used coloured symbols to show the viewer the religions being displayed on the map. We used symbols to allow for faster recognition of the religion and used colour as a second channel to differentiate between the different religions/categories in our data. To account for the fact that some users may not recognise some of the religion symbols, we also included the name of the religion as text next to the coloured symbols of the legend.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <p>
+            One of the key weaknesses of this legend was that it did not differentiate, or even acknowledge, the existence of the various religious sects. For example, Christianity, Judaism, and Islam all have multiple sects that form part of the religion. These sects, while present in the bar graph, were not being displayed in the legend and this proved to be a source of confusion for some of the viewers in the feedback session.
+          </p>
+          <p>
+            Another weakness of this design was the colour scheme, which used colours that were much too intense for use on the other visualisations. When used on the map, the intense colours were quite painful. We realised that the colours needed to be less intense, especially for the larger religions, like Christianity and Islam.
+          </p>
+          <p>
+            The use of symbol and colour to differentiate between the religions (2 feature channels) was a good design element that we decided to keep.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <h3 id="Line_Graph_and_Slider">Line Graph and Slider</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <br/>
+          <div class="thumbnail">
+            <img src="img/1_line.png" alt="img/1_line.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-4">
+          <p>
+            The line graph provided the viewer with an overview of the trends in each religion over time. This allowed the user to see, in a single view, how each religion had risen/declined through all the years present in our dataset. The colours used for the year in the line graph were consistent with the colouring of the symbols in the legend. This colouring was kept consistent throughout the design to aid learnability.
+          </p>
+          <p>
+            The line graph also served as an interactive timeline. A slider (using familiar UI components) was placed below the line graph and a tracking line (inspired by the selector on old analog FM radios) connected the slider handle to the years in the line graph. The slider would allow the user to interact with the data to adjust the map and bar graph to show the data for a particular year.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <p>
+            In this way, the user could inspect trends through the line graph and drill into the data further using the map and bar graph elements.
+          </p>
+          <p>
+            We used bright pink for the tracking line to make it stand out from the lines for religions and made it transparent to further indicate that it was a background element and not a data series. In order to view data for a different year, the user would use the slider to change to a different year.
+          </p>
+          <p>
+            Again, the fact that we did not use real data for this mockup was a key weakness here. Furthermore, the years on the x-axis did not reflect the full range of our data.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <h3 id="Map">Map</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <br/>
+          <div class="thumbnail">
+            <img src="img/1_map.png" alt="img/1_map.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-4">
+          <p>
+            We used a map of the world with each country coloured in according to the dominant religion in that country at that time. This allowed the user to see the geographic spread of religion at a particular time. The colouring of the map also provided an indication as to which religion was the most popular religion in the world at that time. Note that the colouring used in the map is also consistent with the legend and line graph.
+          </p>
+          <p>
+            The map also allowed for user interaction and served a secondary function as a selector. Once a user selected a country, all other graphs would change to display only the data pertaining to the selected country. This allowed the user to drill down and interrogate the data as they wanted.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <p>
+            We did not account for comparisons in this design and this was identified as an important feature to be added in the next design iteration. Furthermore, the colours used in this design were much too intense, and this is most visible in the map. We see large expanses of the map coloured in an extremely intense blue. The high intensity of all the colours was visually disturbing and this needed to be fixed in the next iteration. Another weakness of this map was that it did not indicate the dominant religious sect even though this data was available in our dataset.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <h3 id="Stacked_Bar_Graph">Stacked Bar Graph</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <br/>
+          <div class="thumbnail">
+            <img src="img/1_bar.png" alt="img/1_bar.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-4">
+          <p>
+            A stacked bar graph allowed the user to get the specific number of followers of each religion. We used the stacked bar graph format so that the sects of the religions could also be displayed on the same graph. Each sect was represented as a section on the bar of the religion to which that sect belonged. The x-axis of the graph used coloured symbols, consistent with the symbols from the legend, to differentiate between the different religions being displayed. This use of symbols was an effective design element. In terms of space usage, the bars were kept separated to convey that that they were different, unconnected categories.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <p>
+            In this design, the user was required to hover over a division of the bar to see which sect that division represented and this was a major shortcoming of this design. Because we did not use real data in this mockup, we did not encounter the problem of extreme data ranges which we had to address in our next iteration. Another shortcoming of this design was the fact that the different sects within religions were not differentiated at all; they were the same colour and the only indication that they were different sects was the separators on the bar.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <h3 id="Overview">Overview</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <br/>
+          <div class="thumbnail">
+            <img src="img/1_full.png" alt="img/1_full.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-4">
+          <p>
+            This first design iteration was presented to the class for feedback and critique. We received much constructive criticism and feedback on our initial design. The following are some of the key criticisms we received from the class feedback session:
+            <ul>
+              <li>Improve line graphs</li>
+              <li>Allow for comparisons between countries</li>
+              <li>Allow viewer to explore different sects of a religion</li>
+              <li>Use different intensities of colour for sects</li>
+              <li>Improve the colour scheme (use lower intensity colours for large areas)</li>
+              <li>Use texture and depth</li>
+            </ul>
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <p>
+            Additionally, in a retrospective meeting following the presentation, we identified the following issues as key weaknesses of our design process to address in the next iteration:
+            <ul>
+              <li>We were not using real data in our design mockups. This made it extremely difficult to assess the effectiveness of our design</li>
+              <li>We had not formally specified the interaction that we had discussed and as such it was difficult to communicate and reason about the design effectively</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <h2 id="Second_Iteration">Second Iteration</h2>
+          <p>
+            In our second iteration, we took into consideration the criticisms and feedback received after presenting our initial design. We aimed to eliminate the issues raised and refine the design to more effectively present the data to the user. The second iteration of our visualisation also uncovered a number of unforeseen design challenges which are discussed below.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <h3 id="2_Legend">Legend</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <br/>
+          <div class="thumbnail">
+            <img src="img/2_legend.png" alt="img/2_legend.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-4">
+          <p>
+            The legend was extended to include all 16 religions in the dataset. Furthermore, the legend also included the religious sects. The colours for the sects were generated by using different shades of colour to convey the fact that they are sub-categories belonging to one religion. The colours themselves were changed so that the larger religions used less intense colours, and the smaller religions used higher intensity colours.
+          </p>
+          <p>
+            The use of symbols to differentiate between religions was a good design element that we kept from our first iteration. After finding symbols for all the religions, we found that simply changing the colour of the symbols was not always effective. To solve this design problem, we left all the symbols black and enclosed them in a coloured circle.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <p>
+            This allowed us to keep using symbols while ensuring that the effectiveness of the colour was not lost for symbols with smaller areas. We also kept the text name of the religion from our first design so that viewers unfamiliar with any of the symbols could simply read the name of the religions.
+          </p>
+          <p>
+            We also added some interaction to the legend to allow users to filter out religions that they are not interested in by toggling them off and on. All religions are initially set to ‘on’. When the user clicks on the symbol of a religion, that religion is then toggled off and is no longer displayed on the line graph and bar graph. This allows the user to zoom into the religions that they are more interested in.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <h3 id="2_Map">Map</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <br/>
+          <div class="thumbnail">
+            <img src="img/2_map.png" alt="img/2_map.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-4">
+          <p>
+            The map was extended to show the dominant religion/sect in each country. We were able to include the sect in this iteration by using the colour gradient as discussed in the legend. The user is still able to get a feel for which religion is the most dominant by assessing the general colouring of the graph (e.g. mostly blue and green indicates large numbers of Christians and Muslims). Furthermore, due to the use of the colour gradients for the sects, the user can also see which sect is most dominant in each country.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <p>
+            The use of less intense colours for the larger religions is especially evident in the map. The more aesthetically pleasing colour scheme was a huge improvement from our first design.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <br/>
+          <div class="thumbnail">
+            <img src="img/2_SAUSAselected.png" alt="img/2_SAUSAselected.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-4">
+          <p>
+            The map retained its function as a selector to allow the user to select two countries to compare. In this design iteration, we tried to fully specify the interaction. When the user hovers over a country, it ‘pops up’ and the other countries are faded slightly. The ‘pop up’ effect is achieved by increasing the size of the country slightly, and adding a dropped shadow to add a sense of depth.
+          </p>
+          <p>
+            On hovering over a country, a hover-over with additional information is also displayed. The hover-over shows the name and flag of the country under consideration and also shows the percentage of the population that follows the dominant religion/sect in that country.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <div class="thumbnail">
+            <img src="img/2_SAselected.png" alt="img/2_SAselected.png">
+          </div>
+          <p>
+            When the user clicks on a country, that country is then selected and the rest of the map is gently greyed out. The user is then able to select another country. The second country selected by the user is overlayed with a polka dot pattern to serve as a differentiator on the bar graph.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <h3 id="2_Line_Graph">Line Graph</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <br/>
+          <div class="thumbnail">
+            <img src="img/2_line.png" alt="img/2_line.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-4">
+          <p>
+            The line graph in our second iteration used the actual data from our dataset. The colours of the lines in the line graph were kept consistent with the legend, map, and bar-graph. The line graph only shows lines for the entire religion (not the sects). We used line type as well as colour to differentiate between the lines for the different religions.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <p>
+            The idea of using the x-axis as an interactive timeline slider was carried over from our first iteration. We also decided to keep the semi-transparent, brightly coloured tracking line as a means of suggesting the connectedness between the slider timeline and the line graph.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <h3 id="2_Bar_Graph">Bar Graph</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <br/>
+          <div class="thumbnail">
+            <img src="img/2_percentbar.png" alt="img/2_percentbar.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-4">
+          <p>
+            The bar graph in the second design iteration was used to facilitate the comparison between selected countries. The selected countries are displayed on the left of the bar graph along with the name of the country and the flag of the country. One of the countries is overlayed with a polka dot texture and this texture is used to differentiate between the bars on the bar graph.
+          </p>
+          <p>
+            When designing the bar graph, we found that it challenging to fit all 16 religions on the x-axis when the graph was in the normal orientation (horizontal x-axis). We therefore, decided to rotate the graph to comfortably accommodate all the religions on the same graph. This problem of a crowded graph was also the inspiration to allow users to filter out religions that they were not interested in.
+          </p>
+          <p>
+            After prototyping the bar graph using the actual number of followers of each religion, we realised that we also wanted to see the percentage of the country’s population following religions. We wanted this feature to allow for easier comparisons between countries with large differences in population size. For example, when comparing South Africa and the USA, the bars for the USA overshadowed those for South Africa simply because the population of the USA is so much greater than that of South Africa. We solved this problem by allowing the user to toggle the data on the bar graph between ‘number of followers’ and ‘percentage of population’.
+          </p>
+          <p>
+            The greatest design challenge we faced when designing the bar graph came from the extreme range of values in our dataset. We found that the larger religions like Christianity, were overshadowing the smaller religions and hampering our ability to properly engage with the data.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <p>
+            We first attempted to solve this problem using a logarithmic scale on the y-axis but found it to be unintuitive and ineffective for our purposes. We also attempted to use breaks in the y-axis. This proved to be unsuitable as the problem would simply recur with the next largest religion and if we added a new scale break, the problem would recur. The scale breaks were also distorting our view of the data and not allowing for easy comparisons between bars.
+          </p>
+          <div class="thumbnail">
+            <img src="img/2_islambuddhismbar.png" alt="img/2_islambuddhismbar.png">
+          </div>
+          <p>
+            Our final solution, as seen in the image above, was to simply allow the user to filter the data. This maintained the integrity of the data whilst still allowing the user to effectively compare the smaller religions. The images below show the failed solutions described.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-4">
+          <br/>
+          <div class="thumbnail">
+            <img src="img/logbar.png" alt="img/logbar.png">
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <br/>
+          <div class="thumbnail">
+            <img src="img/scalebreakbar.png" alt="img/scalebreakbar.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-4">
+          <br/>
+          <div class="thumbnail">
+            <img src="img/2_sects.png" alt="img/2_sects.png">
+          </div>
+        </div>
+        <div class="col-lg-4">
+          The bar graph in our new design also allowed for viewers to zoom into a specific religion and inspect and compare the followers of the sects of that religion. When the user clicks on one of the religious symbols or on the bar for a specific religion, the bar graph changes to show the breakdown of followers per sect in that particular religion for the two selected countries. This functionality is best illustrated in the image on the left. This is the result of the user clicking on the symbol for Christianity on the bar graph. It is a bar graph showing the percentage of the population following each sect of Christianity in South Africa and the USA. Again, the polka dot texture is used to differentiate between the bars for each country.
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <h2 id="Third_Iteration">Third Iteration</h2>
+          <p>
+            In our second iteration of our design, we managed to tackle all of main design challenges that we faced and tackle all of the criticisms that we received from our first iteration. We were able to effectively communicate the data to our audience in an unambiguous and simple manner that was easy to understand. Our third iteration thus focused mainly on addressing the stylistic issues around the design. These issues are discussed below.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <h3 id="3_Legend">Legend</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-4">
+          <br/>
+          <div class="thumbnail">
+            <img src="img/3_legend.png" alt="img/3_legend.png">
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <br/>
+          <div class="thumbnail">
+            <img src="img/3_islambuddhismbar.png" alt="img/3_islambuddhismbar.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-8">
+          <p>
+            In order to be able to further differentiate between religions, we incorporated different shapes for our religious symbols. This was beneficial as there is a large number of religions included and this makes it easier for the user to identify a particular religion. This was also incorporated into our bar graph as shown.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <h3 id="3_Style">Style</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-8">
+          <br/>
+          <div class="thumbnail">
+            <img src="img/3_lineseperators.png" alt="img/3_lineseperators.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-8">
+          <p>
+            The final aspect of the design that we improved on was the stylistic appearance of the visualization. All our graphs had previously had the same border around them. We removed this border and used logical line separators between the different sections. We felt this would work better as it keeps the design clean while still accomplishing the desired effect. We also organised the space arounds our graphs more effectively. The graph below shows an example of the line separators that we included. The ‘Final Design’ section contains a better example of these changes.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
