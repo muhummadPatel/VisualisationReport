@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>World Religion Visualisation</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">World Religion Visualisation</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Introduction</a></li>
+            <li class="active"><a href="#">Background</a></li>
+            <li><a href="visual_queries.html">Visual Queries</a></li>
+            <li><a href="visualisation.html">Visualisation</a></li>
+            <li><a href="strengths_and_weaknesses.html">Strengths &amp; Weaknesses</a></li>
+            <li><a href="teamwork.html">Teamwork</a></li>
+            <li><a href="conclusion.html">Conslusion</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <h1>World Religion Visualisation</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <h2 id="Background">Background</h2>
+          <p>
+            While doing research and looking for ideas as to how we could visualize our data, we came across a number of existing visualizations.These visualizations were analyzed in order to identify their shortcomings as well to look for ideas that we could incorporate into ours. The current visualizations are discussed below.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <br/>
+          <div class="thumbnail">
+            <img src="img/colourmap.png" alt="img/colourmap.png">
+          </div>
+          <i>Figure 1:  Main Religious Practices in the World [2]</i>
+        </div>
+        <br/>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-4">
+          <p>
+            Figure 1 uses a map to identify where the main religions in the world are practised at a particular time and uses a colour-coded legend to do. The different sects of the prevailing religions are also included on the map.
+          </p>
+          <p>
+            One of the problems that we had with this visualization was the use of color. Because there are so many religions included, it is difficult to distinguish between some of them as they use similar colours. We liked how they tried to include the different sects and we wanted to be able to include this in our visualization.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <p>
+            Including the sects also greatly increased the number of categories in our visualisation and this led to the inclusion of our filtering feature. It would have also been possible to incorporate the actual religious symbols into the map and legend to help further differentiate between religions.
+          </p>
+          <p>
+            The visualization used a line texture to indicate that there were two religions mainly practised, however this was not communicated clearly to the user which can be problematic.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <br/>
+          <div class="thumbnail">
+            <img src="img/brownmap.png" alt="img/brownmap.png">
+          </div>
+          <i>Figure 2: Religions of the World Map [3]</i>
+        </div>
+        <br/>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-4">
+          <p>
+            Figure 2 contains a map that also indicates the main religion practised in the different regions of the world at a particular time using a colour-coded legend. In this case, the visualization does not show any information about the sects of the religions.
+          </p>
+          <p>
+            The use of colour in this example overall, is good. The colors were easy to distinguish between and the larger areas of colour were less saturated when contrasted with the smaller areas of color. However, the use of brown for Christianity, the most widespread religion, could be confusing for viewers as it is very similar to other map elements (e.g landmass or mountain terrain). Again, a very simple yet effective improvement would have been to include the religious symbols.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <p>
+            While the choice to not include the sects of the religions into the visualization proved to be advantageous in certain areas, it prevented the reader from being to investigate the spread of the data and information about the other religions in particular regions.  This was something that we felt strongly about incorporating into our design.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <br/>
+          <div class="thumbnail">
+            <img src="img/purplemap.png" alt="img/purplemap.png">
+          </div>
+          <i>Figure 3: Predicted Map of Religiously Affiliated Population in 2050 [4]</i>
+        </div>
+        <br/>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-4">
+          <p>
+            Figure 3 uses a map to display the predicted number of religiously affiliated populations in the different regions of the world using a colour gradient. It also uses hover-overs to indicate the aforementioned amount and allows the user to click on areas to access more information about the spread of the religions.
+          </p>
+          <p>
+            We liked the idea of using hover overs and how users could click on countries and access information about the spread of religions. It allowed users to get a rough overview of the number of religious followers and users could then access information about certain areas on demand.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <p>
+            We also liked that they incorporated a search mechanism allowing users to more easily find countries. It was, however, difficult to compare the spread of religions amongst different countries, especially since a user needs to click on an area to get the information about the spread. Another issue with this visualization is the fact the map repeats on both ends, allowing the user to scroll infinitely which can be very confusing.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 centred">
+          <br/>
+          <div class="thumbnail">
+            <img src="img/video.png" alt="img/video.png">
+          </div>
+          <i>Figure 4: Spread of World Religion over time [5]</i>
+        </div>
+        <br/>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-4">
+          <p>
+            The visualization shown in figure 4 is actually a static image of a video showing the spread of religion throughout the world as time progressed.
+          </p>
+          <p>
+            One of the most powerful aspects of the this visualization was the story that it told. By showing how different religions spread and shrank throughout time, this visualization demonstrated how important religious events changed the course of religion throughout the world.
+          </p>
+          <p>
+            The geographic element allowed this visualization to not only tell the story religion, but also the story of country and how a country’s religious composition evolved and molded the country itself throughout time. This visualizations strengths impacted heavily on our final design.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <p>
+            There were many limitations to this visualization. The format being video meant that the viewer had absolutely no control over what was being shown. The viewer couldn’t look into or find out specific statistics about the data that was shown and filtering was not possible. One of the biggest weaknesses in this visualization is that throughout the visualization, only parts of the world is shown which meant that the viewer could not keep track of a particular country.
+          </p>
+        </div>
+      </div>
+
+      <!-- Image element -->
+      <!-- <div class="thumbnail">
+        <img src="img/oldline.jpg" alt="img/oldline.jpg"><br/><br/>
+      </div> -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
